@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="180dip"
+              android:orientation="vertical"
+              android:background="@color/bg_view">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dip"
+        android:orientation="horizontal"
+        android:background="@color/bg_view">
+
+        <TextView
+            android:id="@+id/title_goodsfee_txtv"
+            android:layout_width="match_parent"
+            android:layout_height="20dip"
+            android:layout_marginTop="@dimen/margin_space"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/margin_space"
+            android:gravity="left"
+            android:text="商品总额"
+            style="@style/textStyle.Normal.black"/>
+
+        <TextView
+            android:id="@+id/fee_goodsfee_txtv"
+            android:layout_width="match_parent"
+            android:layout_height="20dip"
+            android:layout_marginTop="@dimen/margin_space"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_space"
+            android:gravity="right"
+            android:text="¥150"
+            style="@style/textStyle.Normal.lightRed"/>
+
+
+
+        <TextView
+            android:id="@+id/title_coupon_txtv"
+            android:layout_below="@id/fee_goodsfee_txtv"
+            android:layout_width="match_parent"
+            android:layout_height="20dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/margin_space"
+            android:gravity="left"
+            android:text="优惠券抵扣"
+            style="@style/textStyle.Normal.black"/>
+
+        <TextView
+            android:id="@+id/fee_coupon_txtv"
+            android:layout_below="@id/fee_goodsfee_txtv"
+            android:layout_width="match_parent"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_space"
+            android:gravity="right"
+            android:text="¥5"
+            style="@style/textStyle.Normal.lightRed"/>
+
+        <TextView
+            android:id="@+id/title_point_txtv"
+            android:layout_below="@id/fee_coupon_txtv"
+            android:layout_width="match_parent"
+            android:layout_height="20dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/margin_space"
+            android:gravity="left"
+            android:text="积分抵扣"
+            style="@style/textStyle.Normal.black"/>
+
+        <TextView
+            android:id="@+id/fee_point_txtv"
+            android:layout_below="@id/fee_coupon_txtv"
+            android:layout_width="match_parent"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_space"
+            android:gravity="right"
+            android:text="¥5"
+            style="@style/textStyle.Normal.lightRed"/>
+
+        <TextView
+            android:id="@+id/title_balance_txtv"
+            android:layout_below="@id/title_point_txtv"
+            android:layout_width="match_parent"
+            android:layout_height="20dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/margin_space"
+            android:gravity="left"
+            android:text="应付金额"
+            style="@style/textStyle.Normal.black"/>
+
+        <TextView
+            android:id="@+id/fee_balance_txtv"
+            android:layout_below="@id/title_point_txtv"
+            android:layout_width="match_parent"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_space"
+            android:gravity="right"
+            android:text="¥110"
+            style="@style/textStyle.Normal.lightRed"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/title_amount_txtv"-->
+            <!--android:layout_below="@id/fee_balance_txtv"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="20dip"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_marginLeft="@dimen/margin_space"-->
+            <!--android:gravity="left"-->
+            <!--android:text="应付金额"-->
+            <!--style="@style/textStyle.Normal.black"/>-->
+
+
+
+    </RelativeLayout>
+    <View style="@style/separator_line" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fee_balance_txtv">
+
+        <TextView
+            android:id="@+id/fee_amount_txtv"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_toLeftOf="@+id/pay_btn"
+            android:layout_marginRight="@dimen/margin_space"
+            android:gravity="right|center_vertical"
+            android:text="待付款: ¥110"
+            style="@style/textStyle.Big.black"/>
+
+        <TextView
+            android:id="@+id/pay_btn"
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_space"
+            android:gravity="center"
+            android:text="立即付款"
+            style="@style/textStyle.Normal.black"
+            android:background="@color/color_0b988f"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/buy_time_txtv"
+        style="@style/textStyle.Normal.subTitle"
+        android:layout_below="@id/fee_balance_txtv"
+        android:layout_width="match_parent"
+        android:layout_height="20dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_space"
+        android:gravity="right|center_vertical"
+        android:text="下单时间: 2019年4月16日20:00:00"/>
+    <View  style="@style/separator_line"/>
+</LinearLayout>

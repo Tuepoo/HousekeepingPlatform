@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">语音家政</string>
+
+    <!-- 主页 home -->
+    <string name="home_image_view_text">首页</string>
+    <string name="pond_image_view_text">语音</string>
+    <string name="message_image_view_text">分类</string>
+    <string name="mine_image_view_text">我的</string>
+    <string name="home_location_text">韶关</string>
+    <string name="home_edittext_hint">请输入关键字</string>
+    <string name="course_detail">课程详情</string>
+    <string name="input_comment">请输入留言</string>
+    <string name="send">发送</string>
+    <string name="navigation_clean_text">保洁</string>
+    <string name="navigation_housekeeper_text">保姆</string>
+    <string name="navigation_appliance_text">家电</string>
+    <string name="navigation_move_text">搬家</string>
+    <string name="home_classify_clean_text">家庭日常保洁</string>
+    <string name="home_classify_clean_sub_text">2小时起服务，会员享优惠</string>
+    <string name="home_classify_hood_text">油烟机清洗</string>
+    <string name="home_classify_hood_sub_text">深层去除油污</string>
+    <string name="home_classify_wc_text">卫生间清洗</string>
+    <string name="home_classify_wc_sub_text">深层去除污垢</string>
+    <string name="home_classify_kitchen_text">厨房保养</string>
+    <string name="home_classify_kitchen_sub_text">感受敞亮空间</string>
+    <string name="home_classify_house_text">新房除甲醛</string>
+    <string name="home_classify_house_sub_text">安心住新房</string>
+
+    <!-- 语音 -->
+    <string name="voice_title">语音助手</string>
+
+    <!-- 分类 -->
+    <string name="normal_title">分类</string>
+    <string name="product_details_spec">产品规格</string>
+    <string name="product_details_attr">商品属性</string>
+    <string name="product_details_detail">详情</string>
+    <string name="product_details_comment">累计评价</string>
+    <string name="product_details_like">已收藏</string>
+    <string name="product_details_unlike">未收藏</string>
+    <string name="product_add_cart">加入购物车</string>
+    <string name="product_buy_now">立即下单</string>
+
+    <!-- 订单 , 确认订单 -->
+    <string name="order_deliver_type">配送方式</string>
+    <string name="order_coupon">代金券/优惠券</string>
+    <string name="order_invoice">发票抬头</string>
+    <string name="order_residue_balance">当前余额</string>
+    <string name="order_goods_fee">商品总额</string>
+    <string name="order_shopping_fee">运费</string>
+    <string name="order_amount_fee">应付金额</string>
+    <string name="order_coupon_hint">请输入优惠码</string>
+    <string name="order_detil_title">订单详情</string>
+
+    <!-- 产品列表 -->
+    <string name="product_price">¥%1$2.2f</string>
+    <string name="sort_composite">综合</string>
+    <string name="sort_salenum">销量</string>
+    <string name="sort_price">价格</string>
+    <string name="sort_filter">筛选</string>
+    <string name="hint_search">请输入要搜索的商品</string>
+    <string name="hint_comment">请输入评价</string>
+
+    <!-- 我的 -->
+    <string name="person_nickname">点击此处登录</string>
+    <string name="person_mine_order">我的订单</string>
+    <string name="person_all_order">查看全部订单</string>
+    <string name="person_order_waitpay">待付款</string>
+    <string name="person_order_waitreceive">待服务</string>
+    <string name="person_order_waitcomment">待评价</string>
+    <string name="person_order_returned">联系客服</string>
+    <string name="person_order_canceled">已取消</string>
+    <string name="person_goods_collect">我的收藏</string>
+    <string name="person_receive_address">地址</string>
+    <string name="person_user_info">个人资料</string>
+    <string name="person_integrate_detail">积分明细</string>
+    <string name="person_coupon">优惠券</string>
+
+    <!-- 搜索 -->
+    <string name="search_text">取消</string>
+    <string name="search_history">搜索历史</string>
+    <string name="cpay_keyboard_clear">清除</string>
+    <string name="search_tip">您可以输入宝贝代码，简称或者拼音首字母开始查找</string>
+    <string name="search_no_title">"抱歉,没有找到与 \""</string>
+    <string name="search_no_end">"\" 相关的宝贝"</string>
+
+    <!-- 详情页面 -->
+    <string name="book_text">"立即预约"</string>
+    <string name="service_detail">服务详情</string>
+
+    <!--登录-->
+    <string name="account">手机号/邮箱</string>
+    <string name="password">输入密码</string>
+</resources>

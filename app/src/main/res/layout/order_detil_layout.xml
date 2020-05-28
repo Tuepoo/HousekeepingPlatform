@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:custom="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_0b988f"
+        android:padding="8dp"
+        >
+
+        <TextView
+            android:id="@+id/order_detil_titlebar_back_btn"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/comment_back_normal"/>
+
+        <TextView
+            android:id="@+id/titlebar_order_detil_txtv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="@string/order_detil_title"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <include layout="@layout/separator_line_margin_slice"/>
+
+    <ScrollView
+        android:id="@+id/confirm_scrollv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="45dip">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_row"
+                android:background="@color/bg_view">
+                <TextView
+                    android:id="@+id/order_ordersn_txtv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/margin_space"
+                    android:gravity="center_horizontal|center_vertical|left"
+                    android:text="订单编号:20190416143407"
+                    style="@style/textStyle.Normal.black"/>
+
+                <TextView
+                    android:id="@+id/order_status_txtv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_space"
+                    android:gravity="center_horizontal|center_vertical|right"
+                    android:text="待支付"
+                    style="@style/textStyle.Normal.lightRed"/>
+            </RelativeLayout>
+            <include layout="@layout/separator_line_margin_slice"/>
+
+            <include
+                layout="@layout/order_confirm_order_consignee_slice"
+                android:layout_width="match_parent"
+                android:layout_height="65dip"/>
+
+            <include layout="@layout/separator_line_margin_slice"/>
+
+            <View style="@style/separator_line"/>
+
+
+            <include
+                layout="@layout/order_confirm_order_productlist_slice"
+                android:layout_width="match_parent"
+                android:layout_height="100dip"/>
+            <View  style="@style/separator_line"/>
+
+            <com.example.lenovo.housekeepingplatform.view.ArrowRowView
+                android:id="@+id/order_coupon_aview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_row"
+                android:clickable="true"
+                android:focusable="true"
+                custom:titleText="@string/order_coupon"
+                custom:indicatorShow="false"/>
+            <View  style="@style/separator_line"/>
+
+            <com.example.lenovo.housekeepingplatform.view.ArrowRowView
+                android:id="@+id/order_invoce_aview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_row"
+                android:clickable="true"
+                android:focusable="true"
+                custom:titleText="@string/order_invoice"
+                custom:indicatorShow="false"/>
+            <View  style="@style/separator_line"/>
+
+            <include
+                layout="@layout/order_confirm_order_overview_slice"
+                android:layout_width="match_parent"
+                android:layout_height="180dip"
+                android:layout_marginBottom="45dip"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

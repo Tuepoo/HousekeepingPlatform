@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <color name="color_333333">#333333</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="color_0b988f">#0b988f</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_cdcdcd">#cdcdcd</color>
+    <color name="color_efefef">#efefef</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_5a79b7">#5a79b7</color>
+    <color name="color_00ffffff">#00ffffff</color>
+    <color name="color_efeff4">#efeff4</color>
+    <color name="color_c0c4ce">#efeff4</color>
+    <color name="color_bfbfbf">#bfbfbf</color>
+    <color name="color_e3e3e3">#e3e3e3</color>
+    <color name="color_cc0000">#cc0000</color>
+    <color name="color_d0d0d0">#d0d0d0</color>
+    <color name="color_ffff4444">#ffff4444</color>
+    <color name="color_ff33b5e5">#ff33b5e5</color>
+    <color name="color_dddddd">#dddddd</color>
+    <color name="color_fd4634">#fd4634</color>
+    <color name="color_font_gray">#9e9d9d</color>
+
+    <!-- 公共颜色属性 -->
+    <color name="bg_activity">#fff0f2f5</color>
+    <color name="bg_view">#ffffffff</color>
+    <color name="bg_header">#fff8f8f8</color>
+
+    <color name="sort_selected_text_color">#fff15353</color>
+    <color name="sort_normal_text_color">#ff000000</color>
+    <color name="search_title_hint_text_color">#ffb6b6b6</color>
+    <color name="search_title_text_color">#ff474646</color>
+    <color name="transparent">#00000000</color>
+    <color name="separator_line">#ffcccccc</color>
+    <color name="transparentblue">#445CACEE</color>
+    <color name="transparentwhite">#44ffffff</color>
+
+    <color name="button_fouces_gray">#f6f6f6</color>
+    <color name="button_bg_gray">#dddcdc</color>//按钮背景灰色
+
+    <color name="sub_title">#848689</color>//副标题文本颜色
+
+    <color name="light_red">#f15353</color>
+
+    <color name="cp_cover_placeholder">#FFE6E6E6</color>
+
+
+    <color name="white">#ffffff</color>
+    <color name="listview_driver">#eeeeee</color>
+    <color name="green">#e581ff02</color>
+    <color name="bg">#4d4d4d</color>
+
+    <color name="color_f1f2f6">#f1f2f6</color>
+</resources>

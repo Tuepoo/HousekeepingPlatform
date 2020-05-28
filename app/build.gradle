@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'realm-android'
+
+android {
+    compileSdkVersion 26
+//    buildToolsVersion "28.0.3"
+    defaultConfig {
+        applicationId "com.example.lenovo.housekeepingplatform"
+        minSdkVersion 24
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    api project(':tuepooandroidadsdk')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.squareup.okhttp3:okhttp:3.3.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    implementation 'com.chanven.lib:cptr:1.0.0'
+    implementation files('libs/com.baidu.tts_2.2.9.20161020_154fa02_release.jar')
+    implementation files('libs/galaxy-v2.0.jar')
+    implementation files('libs/VoiceRecognition-2.1.20.jar')
+    implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    implementation('cn.trinea.android.view.autoscrollviewpager:android-auto-scroll-view-pager:1.1.2') {
+        exclude module: 'support-v4'
+    }
+    implementation 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    //黄油刀
+    implementation 'com.jakewharton:butterknife:8.5.1'
+    implementation 'com.alibaba:fastjson:1.2.9'//fastjson
+    implementation 'com.facebook.fresco:fresco:1.7.1'
+    implementation 'com.facebook.fresco:animated-gif:1.7.1'
+    implementation 'com.facebook.fresco:webpsupport:1.7.1'
+
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}

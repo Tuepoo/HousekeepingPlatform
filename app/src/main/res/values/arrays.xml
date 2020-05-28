@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="viewpager_ad">
+        <item>R.drawable.viewpager1</item>
+        <item>R.drawable.viewpager2</item>
+        <item>R.drawable.viewpager3</item>
+        <item>R.drawable.viewpager4</item>
+        <item>R.drawable.viewpager5</item>
+    </string-array>
+</resources>

@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_cccccc"
+              android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_0b988f"
+        android:padding="8dp"
+        >
+        <RelativeLayout
+            android:id="@+id/location_view"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/area_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/home_location_text"
+                />
+
+            <ImageView
+                android:id="@+id/arrow_view"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/area_view"
+                android:src="@drawable/location_arrow"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/location_view"
+            android:background="@drawable/bg_home_edittext"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="@string/home_edittext_hint"
+            android:textColor="@color/color_cdcdcd"
+            android:textSize="16sp"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:scaleType="center"
+        android:src="@drawable/loading_data_anim"
+        android:visibility="gone"
+        />
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/recycle_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+
+        <!--android:divider="@color/color_cccccc"-->
+        <!--android:dividerHeight="0px"-->
+
+        <!--/>-->
+
+    <include layout="@layout/listview_home_head_layout"></include>
+
+</LinearLayout>

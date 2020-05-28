@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="260dp"
+        android:id="@+id/linearLayout"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#208AFE" />
+        <TextView
+            android:id="@+id/textTitle"
+            android:background="#ffffff"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="登陆失败" />
+        <TextView
+            android:id="@+id/textContent"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="#ffffff"
+            android:text="账号或密码错误，请重新输入" />
+
+        <View style="@style/separator_line"/>
+
+        <Button
+            android:id="@+id/buttonExit"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:text="确定"
+            android:textColor="#000000"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</RelativeLayout>
